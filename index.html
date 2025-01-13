@@ -4,19 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- font awsome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- custom css link -->
-     <link rel="stylesheet" href="style.css">
-    
-     <title>Penguin Fashion</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Penguin Fashion</title>
   </head>
-  <body class="font-['Roboto']">
+  
+  <body class="font-roboto">
     <!-- header starts -->
     <header>
-      <div class="bg-[#FFFBF0] relative h-screen"> 
+      <div class="bg-[#FFFBF0] relative h-screen">
         <div class="container mx-auto px-4">
           <img
             class="absolute top-0 left-1/4"
@@ -24,14 +30,19 @@
             alt=""
           />
         </div>
-        
+
         <!-- navbar starts -->
         <nav
-          class="container mx-auto px-4 flex justify-between items-center h-[14%] md:h-[16.40%]">
+          class="container mx-auto px-4 flex justify-between items-center h-[14%] md:h-[16.40%]"
+        >
           <!-- logo -->
-         <div>
-            <img class="h-[26px] md:h-10 " src="resources/icons/logo.png" alt="brand-logo" />
-         </div>
+          <div>
+            <img
+              class="h-[26px] md:h-10"
+              src="resources/icons/logo.png"
+              alt="brand-logo"
+            />
+          </div>
           <!-- nav-link -->
           <div class="hidden md:block">
             <ul
@@ -44,52 +55,60 @@
             </ul>
           </div>
           <!-- hamburger icon -->
-          <div class="md:hidden ">
-            <i class=" text-3xl leading-none fa-solid fa-bars"></i>
+          <div class="md:hidden">
+            <i class="text-3xl leading-none fa-solid fa-bars"></i>
           </div>
         </nav>
         <!-- navbar ends -->
-        <!-- banner section -->        
-        <section class="container mx-auto px-4 h-[86%] md:h-[83.6%] content-center">
-          <div class="flex flex-col last:self-center md:flex-row  md:justify-between md:items-center md:gap-1 lg:gap-6">
-          <!-- banner content starts-->
-          <div>
-            <h1 class="font-bebas text-6xl md:text-[5rem] uppercase">
-              <span class="text-[#FABE4C] opacity-100">Be the Penguins</span
-              ><br />
-              <span class="text-[#363958]">of Winter</span>
-            </h1>
-            <p class="font-['Roboto'] text-[33E3E3E] mb-2">
-              Lorem Ipsum is simply dummy text of the printing<br />
-              and typesetting industry.
-            </p>
-            <button
-              class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] py-5 px-8 rounded-xl text-[#FFFFFF] space-x-2 mt-6 md:mt-2"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="white"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-6 inline align-middle"
+        <!-- banner section -->
+        <section
+          class="container mx-auto px-4 h-[86%] md:h-[83.6%] content-center"
+        >
+          <div
+            class="flex flex-col last:self-center md:flex-row md:justify-between md:items-center md:gap-1 lg:gap-6"
+          >
+            <!-- banner content starts-->
+            <div>
+              <h1 class="font-bebas text-6xl md:text-[5rem] uppercase">
+                <span class="text-[#FABE4C] opacity-100">Be the Penguins</span
+                ><br />
+                <span class="text-[#363958]">of Winter</span>
+              </h1>
+              <p class="font-['Roboto'] text-[33E3E3E] mb-2">
+                Lorem Ipsum is simply dummy text of the printing<br />
+                and typesetting industry.
+              </p>
+              <button
+                class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] py-5 px-8 rounded-xl text-[#FFFFFF] w-[170px] h-[60px] mt-6 md:mt-2"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                />
-              </svg>
-              <span class="leading-6 font-medium align-middle"> BUY NOW</span>
-            </button>
-          </div>
-          <!-- banner content end -->
-          <!-- banner image starts-->
-           <div class="last:self-center md:h-[559px]">
-            <img class=" md:h-full lg:w-[549px] md:object-fill lg:object-cover" src="resources/images/model.png" alt="model image" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="white"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 inline align-middle"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                  />
+                </svg>
+                <span class="leading-6 font-medium align-middle"> BUY NOW</span>
+              </button>
             </div>
-          <!-- banner image end -->       
-        </div>
+            <!-- banner content end -->
+            <!-- banner image starts-->
+            <div class="last:self-center lg:h-[559px]">
+              <img
+                class="md:h-full lg:w-[549px] md:object-cover"
+                src="resources/images/model.png"
+                alt="model image"
+              />
+            </div>
+            <!-- banner image end -->
+          </div>
         </section>
         <!-- banner section end -->
       </div>
@@ -97,10 +116,438 @@
     <!-- header end -->
 
     <main>
-       <!-- women section  -->
-       <section >
+      <!-- women section  -->
+      <section class="container mx-auto px-4">
+        <h2 class="mt-12 mb-5 font-bebas text-5xl text-[#363958] uppercase">
+          Woman Jacket
+        </h2>
+        <!-- card-gallery starts -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-11 mb-24 border-solid border-4"
+        >
+          <!-- items: card 1 -->
+          <div
+            class="p-5 rounded-[20px] shadow-[0_10px_30px_0_rgba(0,0,0,.05)] bg-[#FFFFFF"
+          >
+            <!-- card image -->
+            <div
+              class="p-5 bg-[#F1F1F1] rounded-[20px] flex justify-center w-full"
+            >
+              <img
+                class="object-cover"
+                src="./resources/images/jacket-1.png"
+                alt="yellow jacket"
+              />
+            </div>
+            <!-- card content -->
+            <div>
+              <h3 class="text-2xl text-[#363958] font-bold mt-4 mb-3">
+                Yellow Coat Jacket
+              </h3>
+              <p class="leading-6 mb-3">
+                Lorem Ipsum is simply dummy textof the printing and typesetting
+                industry.
+              </p>
+              <!-- price and buy button -->
+              <div class="flex justify-between items-center">
+                <span class="text-4xl font-black text-[#FABE4C]"
+                  ><i class="leading-none fa-solid fa-dollar-sign"></i>234</span
+                >
+                <button
+                  class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] py-5 px-8 rounded-xl text-[#FFFFFF] h-[60px]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="white"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline align-middle"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                    />
+                  </svg>
+                  <span class="leading-6 font-medium align-middle">
+                    BUY NOW</span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 1 end -->
 
-       </section>
-    </main> 
+          <!-- items: card 2-->
+          <div
+            class="p-5 rounded-[20px] shadow-[0_10px_30px_0_rgba(0,0,0,.05)] bg-[#FFFFFF]"
+          >
+            <!-- card image -->
+            <div
+              class="p-5 bg-[#F1F1F1] rounded-[20px] flex justify-center w-full"
+            >
+              <img
+                class="object-cover"
+                src="./resources/images/jacket-2.png"
+                alt="yellow jacket"
+              />
+            </div>
+            <!-- card content -->
+            <div>
+              <h3 class="text-2xl text-[#363958] font-bold mt-4 mb-3">
+                Ladies Jacket
+              </h3>
+              <p class="leading-6 mb-3">
+                Lorem Ipsum is simply dummy textof the printing and typesetting
+                industry.
+              </p>
+              <!-- price and buy button -->
+              <div class="flex justify-between items-center">
+                <span class="text-4xl font-black text-[#FABE4C]"
+                  ><i class="leading-none fa-solid fa-dollar-sign"></i>234</span
+                >
+                <button
+                  class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] py-5 px-8 rounded-xl text-[#FFFFFF] h-[60px]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="white"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline align-middle"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                    />
+                  </svg>
+                  <span class="leading-6 font-medium align-middle">
+                    BUY NOW</span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 end -->
+
+          <!-- items: card 3 -->
+          <div
+            class="p-5 rounded-[20px] shadow-[0_10px_30px_0_rgba(0,0,0,.05)] bg-[#FFFFFF]"
+          >
+            <!-- card image -->
+            <div
+              class="p-5 bg-[#F1F1F1] rounded-[20px] flex justify-center w-full"
+            >
+              <img
+                class="object-cover"
+                src="./resources/images/jacket-3.png"
+                alt="yellow jacket"
+              />
+            </div>
+            <!-- card content -->
+            <div>
+              <h3 class="text-2xl text-[#363958] font-bold mt-4 mb-3">
+                Woman Leather Jacket
+              </h3>
+              <p class="leading-6 mb-3">
+                Lorem Ipsum is simply dummy textof the printing and typesetting
+                industry.
+              </p>
+              <!-- price and buy button -->
+              <div class="flex justify-between items-center">
+                <span class="text-4xl font-black text-[#FABE4C]"
+                  ><i class="leading-none fa-solid fa-dollar-sign"></i>234</span
+                >
+                <button
+                  class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] py-5 px-8 rounded-xl text-[#FFFFFF] h-[60px]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="white"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline align-middle"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                    />
+                  </svg>
+                  <span class="leading-6 font-medium align-middle">
+                    BUY NOW</span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 end -->
+        </div>
+        <!-- card gallery end -->
+      </section>
+
+      <!-- man section  -->
+      <section class="container mx-auto px-4 mb-32">
+        <h2 class="mt-12 mb-5 font-bebas text-5xl text-[#363958] uppercase">
+          Man Jacket
+        </h2>
+        <!-- card-gallery starts -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-11 mb-24 lg:last:justify-items-center"
+        >
+          <!-- items: card 4 -->
+          <div
+            class="p-5 rounded-[20px] shadow-[0_10px_30px_0_rgba(0,0,0,.05)] bg-[#FFFFFF]"
+          >
+            <!-- card image -->
+            <div
+              class="p-5 bg-[#F1F1F1] rounded-[20px] flex justify-center w-full"
+            >
+              <img
+                class="object-cover"
+                src="./resources/images/jacket-4.png"
+                alt="Snowboard Jacket Mens"
+              />
+            </div>
+            <!-- card content -->
+            <div>
+              <h3 class="text-2xl text-[#363958] font-bold mt-4 mb-3">
+                Snowboard Jacket Mens
+              </h3>
+              <p class="leading-6 mb-3">
+                Lorem Ipsum is simply dummy textof the printing and typesetting
+                industry.
+              </p>
+              <!-- price and buy button -->
+              <div class="flex justify-between items-center">
+                <span class="text-4xl font-black text-[#FABE4C]"
+                  ><i class="leading-none fa-solid fa-dollar-sign"></i>234</span
+                >
+                <button
+                  class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] py-5 px-8 rounded-xl text-[#FFFFFF] h-[60px]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="white"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline align-middle"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                    />
+                  </svg>
+                  <span class="leading-6 font-medium align-middle">
+                    BUY NOW</span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 4 end -->
+
+          <!-- items: card 5-->
+          <div
+            class="p-5 rounded-[20px] shadow-[0_10px_30px_0_rgba(0,0,0,.05)] bg[#FFFFFF]"
+          >
+            <!-- card image -->
+            <div
+              class="p-5 bg-[#F1F1F1] rounded-[20px] flex justify-center w-full"
+            >
+              <img
+                class="object-cover"
+                src="./resources/images/jacket-5.png"
+                alt="Man Leather Jackets"
+              />
+            </div>
+            <!-- card content -->
+            <div class=" ">
+              <h3 class="text-2xl text-[#363958] font-bold mt-4 mb-3">
+                Man Leather
+                <span class="hidden lg:inline xl:hidden"><br /></span> Jackets
+              </h3>
+              <p class="leading-6 mb-3">
+                Lorem Ipsum is simply dummy textof the printing and typesetting
+                industry.
+              </p>
+              <!-- price and buy button -->
+              <div class="flex justify-between items-center">
+                <span class="text-4xl font-black text-[#FABE4C]"
+                  ><i class="leading-none fa-solid fa-dollar-sign"></i>234</span
+                >
+                <button
+                  class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] py-5 px-8 rounded-xl text-[#FFFFFF] h-[60px]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="white"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline align-middle"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                    />
+                  </svg>
+                  <span class="leading-6 font-medium align-middle">
+                    BUY NOW</span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 5 end -->
+
+          <!-- items: card 6 -->
+          <div
+            class="p-5 rounded-[20px] shadow-[0_10px_30px_0_rgba(0,0,0,.05)] bg[#FFFFFF]border-solid grid last:justify-items-center"
+          >
+            <!-- card image -->
+            <div
+              class="p-5 bg-[#F1F1F1] rounded-[20px] flex justify-center w-full"
+            >
+              <img
+                class="object-cover"
+                src="./resources/images/jacket-6.png"
+                alt="Man Casual Jackets"
+              />
+            </div>
+            <!-- card content -->
+            <div>
+              <h3 class="text-2xl text-[#363958] font-bold mt-4 mb-3">
+                Man Casual<span class="hidden lg:inline xl:hidden"><br /></span>
+                Jackets
+              </h3>
+              <p class="leading-6 mb-3">
+                Lorem Ipsum is simply dummy textof the printing and typesetting
+                industry.
+              </p>
+              <!-- price and buy button -->
+              <div class="flex justify-between items-center">
+                <span class="text-4xl font-black text-[#FABE4C]"
+                  ><i class="leading-none fa-solid fa-dollar-sign"></i>234</span
+                >
+                <button
+                  class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] py-5 px-8 rounded-xl text-[#FFFFFF] h-[60px]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="white"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6 inline align-middle"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                    />
+                  </svg>
+                  <span class="leading-6 font-medium align-middle">
+                    BUY NOW</span
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 6 end -->
+        </div>
+        <!-- card gallery end -->
+      </section>
+      <!-- man section end -->
+
+      <!-- services -->
+      <section class="container mx-auto px-4 mb-48">
+        <!-- services container -->
+        <div class="flex gap-24 flex-col lg:flex-row items-center">
+          <!-- options for services -->
+          <div class="grid gap-9 lg:gap-4 w-[100%] lg:w-[45%]">
+            <!-- service 1 start -->
+            <div
+              class="p-8 lg:p-5 rounded-[20px] shadow-[0_10px_30px_0_rgba(0,0,0,.05)] bg-[#FFFFFF] flex flex-col lg:flex-row gap-9 justify-center lg:justify-normal items-center"
+            >
+              <!-- icon -->
+              <div class="w-[79px]">
+                <img src="./resources/icons/house.png" alt="house icon" />
+              </div>
+              <!-- service card-content -->
+              <div class="text-center">
+                <h3 class="text-2xl text-[#363958] font-bold mb-4">
+                  Find the Perfect Fit
+                </h3>
+                <p class="leading-7 mr-0 lg:mr-9">
+                  Everybody is different, which is why we offer styles for every
+                  body.
+                </p>
+              </div>
+            </div>
+
+            <!-- service 2 start -->
+            <div
+              class="p-8 lg:p-5 rounded-[20px] shadow-[0_10px_30px_0_rgba(0,0,0,.05)] bg-[#FFFFFF] flex flex-col lg:flex-row gap-9 justify-center lg:justify-normal items-center"
+            >
+              <!-- icon -->
+              <div class="w-[79px]">
+                <img src="./resources/icons/box.png" alt="box icon" />
+              </div>
+              <!-- service card-content -->
+              <div class="text-center">
+                <h3 class="text-2xl text-[#363958] font-bold mb-4">
+                  Free Exchanges
+                </h3>
+                <p class="leading-7 mr-0 lg:mr-9">
+                  One of the many reasons you can shop with peace of mind.
+                </p>
+              </div>
+            </div>
+
+            <!-- service 3 start -->
+            <div
+              class="p-8 lg:p-5 rounded-[20px] shadow-[0_10px_30px_0_rgba(0,0,0,.05)] bg-[#FFFFFF] flex flex-col lg:flex-row gap-9 justify-center lg:justify-normal items-center"
+            >
+              <!-- icon -->
+              <div class="w-[79px]">
+                <img
+                  src="./resources/icons/question.png"
+                  alt="questions icon"
+                />
+              </div>
+              <!-- service card-content -->
+              <div class="text-center lg:text-left">
+                <h3 class="text-2xl text-[#363958] font-bold mb-4">
+                  Contact Our Seller
+                </h3>
+                <p class="leading-7 mr-0 lg:mr-9">
+                  They are here to help you. That's quite literally what we pay
+                  them for.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- footer banner image -->
+          <div class="w-full lg:w-[55%]">
+            <img
+              class="w-full overflow-hidden object-cover"
+              src="./resources/images/shopping.png"
+              alt="shoppping"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- services end -->
+    </main>
+ 
   </body>
 </html>
